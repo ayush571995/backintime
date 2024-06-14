@@ -93,10 +93,10 @@ class MirrorMirrorOnTheWall(unittest.TestCase):
             # problems currently exiting in the BIT code base. Quit easy to fix
             # because there count is low.
             # 'C0303',  # trailing-whitespace
-            # 'C0305',  # trailing-newlines
-            # 'C0324',  # superfluous-parens
-            # 'C0410',  # multiple-imports
-            # 'E0213',  # no-self-argument
+            'C0305',  # trailing-newlines
+            'C0324',  # superfluous-parens
+            'C0410',  # multiple-imports
+            'E0213',  # no-self-argument
             # 'R0201',  # no-self-use
             # 'R0202',  # no-classmethod-decorator
             # 'R0203',  # no-staticmethod-decorator
