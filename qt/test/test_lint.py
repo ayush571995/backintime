@@ -76,11 +76,15 @@ class MirrorMirrorOnTheWall(unittest.TestCase):
 
         # Explicit activate checks
         err_codes = [
+            'C0305',  # trailing-newlines
+            'C0324',  # superfluous-parens
+            'C0410',  # multiple-imports
             'E0100',  # init-is-generator
             'E0101',  # return-in-init
             'E0102',  # function-redefined
             'E0103',  # not-in-loop
             'E0106',  # return-arg-in-generator
+            'E0213',  # no-self-argument
             'E0401',  # import-error
             'E0602',  # undefined-variable
             'E1101',  # no-member
@@ -93,10 +97,6 @@ class MirrorMirrorOnTheWall(unittest.TestCase):
             # problems currently exiting in the BIT code base. Quit easy to fix
             # because there count is low.
             # 'C0303',  # trailing-whitespace
-            'C0305',  # trailing-newlines
-            'C0324',  # superfluous-parens
-            'C0410',  # multiple-imports
-            'E0213',  # no-self-argument
             # 'R0201',  # no-self-use
             # 'R0202',  # no-classmethod-decorator
             # 'R0203',  # no-staticmethod-decorator
